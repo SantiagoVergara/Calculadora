@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>566</width>
-    <height>274</height>
+    <width>283</width>
+    <height>282</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -240,37 +240,24 @@
      <x>90</x>
      <y>240</y>
      <width>98</width>
-     <height>27</height>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
     <string>Guardar</string>
    </property>
   </widget>
-  <widget class="QTextEdit" name="Operaciones">
+  <widget class="QPushButton" name="AC">
    <property name="geometry">
     <rect>
-     <x>310</x>
-     <y>60</y>
-     <width>241</width>
-     <height>201</height>
-    </rect>
-   </property>
-   <property name="mouseTracking">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>30</y>
-     <width>171</width>
-     <height>17</height>
+     <x>210</x>
+     <y>240</y>
+     <width>41</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
-    <string>Operaciones Guardadas:</string>
+    <string>AC</string>
    </property>
   </widget>
  </widget>
@@ -436,6 +423,134 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>dividir</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>dividir()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>241</x>
+     <y>103</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>275</x>
+     <y>72</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>multiplicar</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>multiplicar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>228</x>
+     <y>139</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>294</x>
+     <y>139</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>restar</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>restar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>227</x>
+     <y>171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>273</x>
+     <y>186</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sumar</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>sumar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>233</x>
+     <y>218</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>292</x>
+     <y>243</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>punto</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>punto()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>216</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>144</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>igual</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>igual()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>184</x>
+     <y>208</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>200</x>
+     <y>193</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AC</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>AC()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>225</x>
+     <y>261</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>272</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>guardar</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>guardar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>99</x>
+     <y>252</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>31</x>
+     <y>246</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>siete()</slot>
@@ -448,5 +563,13 @@
   <slot>dos()</slot>
   <slot>tres()</slot>
   <slot>cero()</slot>
+  <slot>dividir()</slot>
+  <slot>multiplicar()</slot>
+  <slot>restar()</slot>
+  <slot>sumar()</slot>
+  <slot>punto()</slot>
+  <slot>igual()</slot>
+  <slot>AC()</slot>
+  <slot>guardar()</slot>
  </slots>
 </ui>

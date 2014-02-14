@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'Calculadora.ui'
 #
-# Created: Mon Feb  3 16:51:37 2014
+# Created: Thu Feb 13 23:51:43 2014
 #      by: PyQt4 UI code generator 4.10.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -26,7 +26,7 @@ except AttributeError:
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName(_fromUtf8("Form"))
-        Form.resize(566, 274)
+        Form.resize(283, 282)
         self.siete = QtGui.QPushButton(Form)
         self.siete.setGeometry(QtCore.QRect(30, 80, 41, 31))
         self.siete.setObjectName(_fromUtf8("siete"))
@@ -80,15 +80,11 @@ class Ui_Form(object):
         self.pantalla.setGeometry(QtCore.QRect(30, 30, 221, 31))
         self.pantalla.setObjectName(_fromUtf8("pantalla"))
         self.guardar = QtGui.QPushButton(Form)
-        self.guardar.setGeometry(QtCore.QRect(90, 240, 98, 27))
+        self.guardar.setGeometry(QtCore.QRect(90, 240, 98, 31))
         self.guardar.setObjectName(_fromUtf8("guardar"))
-        self.Operaciones = QtGui.QTextEdit(Form)
-        self.Operaciones.setGeometry(QtCore.QRect(310, 60, 241, 201))
-        self.Operaciones.setMouseTracking(False)
-        self.Operaciones.setObjectName(_fromUtf8("Operaciones"))
-        self.label = QtGui.QLabel(Form)
-        self.label.setGeometry(QtCore.QRect(350, 30, 171, 17))
-        self.label.setObjectName(_fromUtf8("label"))
+        self.AC = QtGui.QPushButton(Form)
+        self.AC.setGeometry(QtCore.QRect(210, 240, 41, 31))
+        self.AC.setObjectName(_fromUtf8("AC"))
 
         self.retranslateUi(Form)
         QtCore.QObject.connect(self.siete, QtCore.SIGNAL(_fromUtf8("clicked()")), Form.siete)
@@ -101,6 +97,14 @@ class Ui_Form(object):
         QtCore.QObject.connect(self.dos, QtCore.SIGNAL(_fromUtf8("clicked()")), Form.dos)
         QtCore.QObject.connect(self.tres, QtCore.SIGNAL(_fromUtf8("clicked()")), Form.tres)
         QtCore.QObject.connect(self.cero, QtCore.SIGNAL(_fromUtf8("clicked()")), Form.cero)
+        QtCore.QObject.connect(self.dividir, QtCore.SIGNAL(_fromUtf8("clicked()")), Form.dividir)
+        QtCore.QObject.connect(self.multiplicar, QtCore.SIGNAL(_fromUtf8("clicked()")), Form.multiplicar)
+        QtCore.QObject.connect(self.restar, QtCore.SIGNAL(_fromUtf8("clicked()")), Form.restar)
+        QtCore.QObject.connect(self.sumar, QtCore.SIGNAL(_fromUtf8("clicked()")), Form.sumar)
+        QtCore.QObject.connect(self.punto, QtCore.SIGNAL(_fromUtf8("clicked()")), Form.punto)
+        QtCore.QObject.connect(self.igual, QtCore.SIGNAL(_fromUtf8("clicked()")), Form.igual)
+        QtCore.QObject.connect(self.AC, QtCore.SIGNAL(_fromUtf8("clicked()")), Form.AC)
+        QtCore.QObject.connect(self.guardar, QtCore.SIGNAL(_fromUtf8("clicked()")), Form.guardar)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
@@ -122,5 +126,5 @@ class Ui_Form(object):
         self.igual.setText(_translate("Form", "=", None))
         self.punto.setText(_translate("Form", ".", None))
         self.guardar.setText(_translate("Form", "Guardar", None))
-        self.label.setText(_translate("Form", "Operaciones Guardadas:", None))
+        self.AC.setText(_translate("Form", "AC", None))
 
